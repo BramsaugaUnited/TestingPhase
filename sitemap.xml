@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--  created with sitemap generator https://octopus.do  -->
+
+    <url>
+        <loc>https://bramsaugaunited.ca</loc>
+        <lastmod>2024-06-02</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bramsaugaunited.ca/index.html</loc>
+        <lastmod>2024-06-02</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bramsaugaunited.ca/bramsaugaStory.html</loc>
+        <lastmod>2024-06-02</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bramsaugaunited.ca/sponsors.html</loc>
+        <lastmod>2024-06-02</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bramsaugaunited.ca/media.html</loc>
+        <lastmod>2024-06-02</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bramsaugaunited.ca/contact.html</loc>
+        <lastmod>2024-06-02</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bramsaugaunited.ca/clubInfo.html</loc>
+        <lastmod>2024-06-02</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>

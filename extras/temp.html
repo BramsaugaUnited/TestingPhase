@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Submit Your Name</h1>
+    <form id="nameForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Submitted Names</h2>
+    <table id="namesTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Names will be appended here -->
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nameForm = document.getElementById("nameForm");
+            const namesTable = document.getElementById("namesTable").getElementsByTagName('tbody')[0];
+
+            // Load names from local storage
+            const loadNames = () => {
+                const names = JSON.parse(localStorage.getItem('names')) || [];
+                names.forEach(name => {
+                    appendNameToTable(name.firstName, name.lastName);
+                });
+            };
+
+            // Save names to local storage
+            const saveNames = (names) => {
+                localStorage.setItem('names', JSON.stringify(names));
+            };
+
+            // Append a name to the table
+            const appendNameToTable = (firstName, lastName) => {
+                const row = namesTable.insertRow();
+                const cell1 = row.insertCell(0);
+                const cell2 = row.insertCell(1);
+                cell1.textContent = firstName;
+                cell2.textContent = lastName;
+            };
+
+            // Handle form submission
+            nameForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const firstName = document.getElementById('firstName').value;
+                const lastName = document.getElementById('lastName').value;
+                
+                // Append to table
+                appendNameToTable(firstName, lastName);
+
+                // Save to local storage
+                const names = JSON.parse(localStorage.getItem('names')) || [];
+                names.push({ firstName, lastName });
+                saveNames(names);
+
+                // Reset form
+                nameForm.reset();
+            });
+
+            // Initial load
+            loadNames();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- teamMembers.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <!-- Include any CSS stylesheets or frameworks you're using -->
+</head>
+<body>
+    <h1>Team Members</h1>
+
+    <table id="membersTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Membership Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically populated here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Fetch data from backend and populate the table
+        fetch('/api/getMembers')
+            .then(response => response.json())
+            .then(data => {
+                const membersTable = document.getElementById('membersTable');
+                const tbody = membersTable.querySelector('tbody');
+                data.forEach(member => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${member.firstName}</td>
+                        <td>${member.lastName}</td>
+                        <td>${member.membership}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error fetching members:', error));
+    </script>
+</body>
+</html>

@@ -1,113 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bramsauga United</title>
-  <style>
-    /* Reset some default styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Main styles */
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 32px;
-    }
-
-    nav {
-      background-color: #555;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 24px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      nav ul li {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bramsauga United | Bramsauga United Official Website</title>
+    <link rel="icon" href="/images/LogoNoBg.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Bramsauga United</h1>
-  </header>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="/images/LogoNoBg.png" alt="Logo" class="d-inline-block align-text-top" style="height: 60px;">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Bramsauga United</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="bramsaugaStory.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="bramsaugaStory.html">Bramsauga Story</a></li>
+                  <li><a class="dropdown-item" href="members.html">Board of Directors</a></li>
+                  <li><a class="dropdown-item" href="teamMembers.html">Team Members</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="events.html">Events Archive</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sponsors.html">Sponsors</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="media.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Media Hub
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="media.html">Photos Archive</a></li>
+                  <li><a class="dropdown-item" href="media.html">Videos Archive</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="nav-item">
+              <a href="clubInfo.html" class="btn btn-outline-success me-2 mb-1 mb-sm-0">The Club</a>
+            </div>
+            <div class="nav-item">
+                <a href="membership.html" class="btn btn-outline-primary me-2">Membership</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#vision">Vision</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+ 
+     
+      <div class="container-fluid position-relative d-flex justify-content-center align-items-center p-0" style="height: 80vh; overflow: hidden;">
+        <div class="background-animation"></div>
+        <div class="overlay"></div>
+        <div class="row w-100">
+            <div class="col-lg-12">
+                <main role="main" class="inner cover text-center text-white" style="margin-top: 100px; position: relative; z-index: 1;">
+                    <h1 class="cover-heading">Bramsauga United</h1>
+                    <p class="lead mb-4" style="max-width: 50rem; margin: 0 auto; color: rgb(238, 230, 230); font-size: 1rem;">Soccer, Culture, and Unity among Nepalese Community in Canada</p>
+                    <div class="nav-item">
+                        <a href="./membership.html" class="btn btn-light me-2">Become a Member</a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
 
-  <main>
-    <section id="home">
-      <h2>Welcome to Bramsauga United</h2>
-      <p>Experience the thrill of soccer with Bramsauga United. Join our team and be part of something great!</p>
-    </section>
+    
 
-    <section id="about">
-      <h2>About Bramsauga United</h2>
-      <p>Bramsauga United is a soccer club founded in 2005. We aim to provide a nurturing environment for players of all ages and skill levels to develop their passion for soccer.</p>
-    </section>
+      <div class="container mt-5">
+        <h4 class="text-center text-muted">Vision Within Bramsauga</h1>
+        <div class="row">
+          <div class= "text-center col-md-10 offset-md-1">
+            <p class="text-muted mt-4">Bramsauga United, founded in 2022, has a rich tradition of success on and off the field. We are deeply committed to fostering a sense of community, sportsmanship, and excellence in everything we do. From our dedicated players to our passionate supporters, everyone plays a crucial role in the ongoing success of our club. With top-notch facilities, experienced coaching staff, and a vibrant atmosphere, we provide an environment where players of all ages and skill levels can thrive and reach their full potential. Whether you're a seasoned veteran or just starting your football journey, there's a place for you in our football family. Join us and be part of something special!</p>
+          </div>
+        </div>
+      </div>
 
-    <section id="vision">
-      <h2>Our Vision</h2>
-      <p>At Bramsauga United, our vision is to become one of the top soccer clubs in the region. We strive for excellence in training, sportsmanship, and community involvement. Our goal is to inspire and empower players to reach their full potential both on and off the field.</p>
-    </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>If you have any questions or would like to join Bramsauga United, please reach out to us:</p>
-      <ul>
-       
+
+      <div class="container mt-5">
+        <div class="row ps-2 g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="feature col">
+                <i class="bi bi-trophy fs-1 d-block mx-auto mb-3"></i>                
+                <h3 class="fs-2 text-body-emphasis">Achievement</h3>
+                <p>Within the landscape of achievement, resilience is our cornerstone. It withstands the tests of time and propels us forward, forging pathways to triumph amidst the most daunting challenges.</p>         
+            </div>
+            <div class="feature col">
+                <i class="bi bi-alarm fs-1 d-block mx-auto mb-3"></i>                
+                <h3 class="fs-2 text-body-emphasis">Discipline</h3>
+                <p>Discipline is our anchor in the storm of challenges. It fortifies us when adversities loom large and transforms teams into unbreakable forces.</p>
+            </div>
+            <div class="feature col">
+                <i class="bi bi-calendar-check fs-1 d-block mx-auto mb-3"></i>                
+                <h3 class="fs-2 text-body-emphasis">Team Morals</h3>
+                <p>In the realm of team morale, unity becomes our guiding light. It uplifts spirits when the journey gets arduous and binds us together with unwavering strength.</p>
+            </div>
+        </div>
+    </div>
+    
+
+  
+  <div class="container mt-5 mb-5" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover;">
+    <div class="p-5 text-center  rounded-3">
+      <h1 class="mb-4 text-danger">Want to Sponsor Us?</h1>
+      <p class="lead mb-4 text-light">Join our team of sponsors and partners and help support the future of Bramsauga United. Your support helps us provide the best training and facilities for our players.</p>
+      <a href="/contact.html" class="btn btn-success btn-lg">Learn More</a>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="mb-3">Bramsauga United: Our Journey & Adventure</h2>
+            <p>
+                We have been an integral part of the Brampton and Mississauga communities, nurturing young talents and promoting a love for soccer. Our journey began with a group of passionate individuals dedicated to fostering sportsmanship, teamwork, and excellence on and off the field. Over the years, we have faced numerous challenges, celebrated countless victories, and created unforgettable memories. From local tournaments to national championships, our adventure continues to inspire and bring together players, families, and fans. Join us as we strive for greatness and build a legacy of sportsmanship and community spirit.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="/images/events/allMembers.jpeg" class="img-fluid" alt="Bramsauga United Soccer Team">
+        </div>
+    </div>
+</div>
+      
+
+
+
+      <footer class="bg-coral pt-5 pb-2"> <!-- Reduced padding at the bottom -->
+        <div class="container">
+            <div class="row ps-2">
+                <!-- About Us -->
+                <div class="col-md-2 mb-4">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link text-muted" href="bramsaugaStory.html">Our Story</a></li>
+                        <li><a class="nav-link text-muted" href="members.html">Team Members</a></li>
+                        <li><a class="nav-link text-muted" href="events.html">Events</a></li>
+                        <li><a class="nav-link text-muted" href="media.html">Media Archive</a></li>            
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                <div class="col-md-2 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link text-muted" href="contact.html">Contact Info</a></li>
+                        <li><a class="nav-link text-muted" href="membership.html">Membership</a></li>
+                        <li><a class="nav-link text-muted" href="members.html">Board Members</a></li>
+                    </ul>
+                </div>
+                <!-- Facebook -->
+                <div class="col-md-4 mb-4">
+                    <h5>Facebook</h5>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100085544942708&tabs=timeline&width=300&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+                <!-- Maps -->
+                <div class="col-md-4 mb-4">
+                  <h5>Bramsauga's Address</h5>
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sterritt%20Drive,%20Brampton,%20ON+(Bramsauga%20United)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">Bramsauga United</a></iframe>                    </div>
+                </div>
+            </div>
+            <!-- Copyright Notice -->
+            <div class="row">
+                <div class="col-md-12 text-center mt-2"> <!-- Reduced top margin -->
+                    <p class="text-muted" style="font-size: 14px;">© 2024 Bramsauga United. All rights reserved.</p> <!-- Reduced font size -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100085544942708"><i class="bi bi-facebook"></i></a></li> <!-- Add your Facebook link -->
+                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100085544942708"><i class="bi bi-instagram"></i></a></li> <!-- Add your Instagram link -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
+
